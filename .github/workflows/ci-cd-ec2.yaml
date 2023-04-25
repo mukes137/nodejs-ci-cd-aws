@@ -58,7 +58,7 @@ jobs:
             scp -i private_key.pem \
             -o StrictHostKeyChecking=no \
             -o UserKnownHostsFile=/dev/null \
-            -r ./* ${{ secrets.EC2_USERNAME }}@${{ secrets.EC2_IP_ADDRESS }}:/app/
+            -r ./* ${{ secrets.EC2_USERNAME }}@${{ secrets.EC2_IP_ADDRESS }}:/home/ubuntu/app/
 
     - name : Start Node app with PM2 Process Manager
       run: |       
