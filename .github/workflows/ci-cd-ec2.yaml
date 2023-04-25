@@ -66,4 +66,4 @@ jobs:
         -o StrictHostKeyChecking=no \
         -o UserKnownHostsFile=/dev/null \
         ${{ secrets.EC2_USERNAME }}@${{ secrets.EC2_IP_ADDRESS }} \
-        'chmod +x /app/pm2.sh && cd /app && ./pm2.sh'
+        'chmod +x /home/ubuntu/app/pm2.sh && cd home/ubuntu/app && ./pm2.sh'
